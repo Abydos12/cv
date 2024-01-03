@@ -3,7 +3,11 @@ const config = {
 	darkMode: 'class',
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {}
+		extend: {
+			blur: {
+				xs: '2px',
+			}
+		}
 	},
 	plugins: []
 };

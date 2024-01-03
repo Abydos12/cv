@@ -4,10 +4,9 @@
 
 
 
-body {
-    /*background: theme('colors.slate.200');*/
+.app {
     background-image: radial-gradient(circle, var(--tw-gradient-from) 2px, var(--tw-gradient-stops) 2px);
     background-size: 2rem 2rem;
     opacity: 1;
-    /*background-repeat: no-repeat;*/
 }
+
