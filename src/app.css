@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
     body {
-        @apply bg-cover bg-fixed bg-no-repeat bg-center bg-light dark:bg-dark;
+        @apply bg-cover bg-fixed bg-no-repeat bg-center bg-[url('$lib/img/bg-light.jpg')] dark:bg-[url('$lib/img/bg-dark.jpg')];
     }
 
     body {
@@ -17,4 +18,3 @@
         @apply bg-black/5 border-white/10 border backdrop-blur-md shadow-lg rounded-lg backdrop-saturate-200;
     }
 }
-

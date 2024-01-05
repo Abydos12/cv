@@ -1,6 +1,4 @@
-
-
-{#each Array(0) as i}
+{#each Array(2) as i}
 	<section class="glass p-2">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec lacinia ante, vitae
 		pharetra ipsum. Mauris volutpat, mauris non venenatis egestas, quam tortor volutpat tellus, ut
@@ -13,4 +11,3 @@
 		ullamcorper consequat, diam tellus dignissim augue, vitae ullamcorper elit ligula vel augue.
 	</section>
 {/each}
-
