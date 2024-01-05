@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body {
+        @apply bg-cover bg-fixed bg-no-repeat bg-center bg-light dark:bg-dark;
+    }
 
+    body {
+        @apply dark:text-zinc-200
+    }
+}
 
-.app {
-    background-image: radial-gradient(circle, var(--tw-gradient-from) 2px, var(--tw-gradient-stops) 2px);
-    background-size: 2rem 2rem;
-    opacity: 1;
+@layer components {
+    .glass {
+        @apply bg-black/5 border-white/10 border backdrop-blur-md shadow-lg rounded-lg backdrop-saturate-200;
+    }
 }
 
