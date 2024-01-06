@@ -1,9 +1,6 @@
 <script>
 	import typescriptLogo from '$lib/img/typescript-logo.svg';
 	import pythonLogo from '$lib/img/python-logo.svg';
-	import PythonLogo from '$lib/components/logos/PythonLogo.svelte';
-	import Tag from '$lib/components/logos/Tag.svelte';
-	import TypescriptLogo from '$lib/components/logos/TypescriptLogo.svelte';
 	import IconTag from '$lib/components/IconTag.svelte';
 </script>
 
