@@ -13,7 +13,7 @@
 </h2>
 
 <div>
-	<div><code>September 2019 - September 2022</code></div>
+	<div><code>September 2019 - September 2022 (3 years)</code></div>
 	<div>Full Stack Developer (Apprenticeship)</div>
 	<div>Société Générale</div>
 	<ul class="list-disc list-inside">
