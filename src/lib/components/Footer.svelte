@@ -1,9 +1,9 @@
 <script>
-	import SvelteKitLogo from '$lib/components/SvelteKitLogo.svelte';
-	import TailwindcssLogo from '$lib/components/TailwindcssLogo.svelte';
+	import SvelteKitLogo from '$lib/components/logos/SvelteKitLogo.svelte';
+	import TailwindcssLogo from '$lib/components/logos/TailwindcssLogo.svelte';
 </script>
 
-<footer class="glass p-2 md:p-4 font-mono align-middle text-center">
+<footer class="glass p-2 md:p-4 font-mono text-center flex gap-x-2 flex-col items-center md:flex-row md:justify-center">
 	<p>Built by Guillaume Berdeaux</p>
 	<p>
 		<a href="https://kit.svelte.dev/">

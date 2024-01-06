@@ -1,3 +1,11 @@
+<script>
+	import Education from '$lib/components/CorporateExperiences.svelte';
+</script>
+
+<div class="glass p-2">
+	<Education />
+</div>
+
 {#each Array(2) as i}
 	<section class="glass p-2">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec lacinia ante, vitae
