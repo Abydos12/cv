@@ -33,7 +33,7 @@
 		<a href={link.url} class="glass p-2 hover:bg-zinc-400/40 text-2xl font-bold">
 		
 	<span
-		class="bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-rose-600  dark:from-green-600 dark:to-teal-600 transition-colors duration-300"
+		class="bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-rose-600  dark:from-green-600 dark:to-teal-600 transition-colors"
 	>
 		{link.label}
 	</span>
