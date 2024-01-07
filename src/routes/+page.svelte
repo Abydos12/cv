@@ -1,7 +1,7 @@
 <script>
 	import Education from '$lib/components/CorporateExperiences.svelte';
 	import IconTag from '$lib/components/IconTag.svelte';
-	import linkedinLogo from '$lib/img/linkedin-logo.svg'
+	import linkedinLogo from '$lib/icons/linkedin-logo.svg'
 
 	const links = [
 		{ url: 'experiences', label: 'Experiences' },
