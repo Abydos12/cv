@@ -14,7 +14,6 @@
 			</a>
 			+
 			<a href="https://tailwindcss.com/">
-				<img src={sveltekitLogo} alt="SvelteKit logo" class="h-5 inline-block" />
 				<TailwindcssLogo class="h-4 inline-block" />
 			</a>
 		</p>

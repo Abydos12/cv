@@ -1,32 +1,110 @@
 <script>
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import linkedinLogo from '$lib/icons/linkedin-logo.svg';
+	import { page } from '$app/stores';
+
+	const links = [
+		{ url: '/', label: 'Home' },
+		{ url: '/experiences', label: 'Experiences' },
+		{ url: '/education', label: 'Education' },
+		{ url: '/about', label: 'About' }
+	];
+
+	let isMenuOpen = false;
+
+	function toggleIsMenuOpen(){
+		isMenuOpen = !isMenuOpen;
+	}
+
 </script>
 
-<header class="sticky z-10 top-0 flex justify-between md:grid md:grid-cols-3 gap-2 items-start">
-	<div>
-		<a
-			href="www.linkedin.com/in/guillaume-bdx"
-			class="glass p-2 hover:bg-blue-500/40 font-bold flex items-center gap-2"
-		>
-			<img src={linkedinLogo} alt="Linkedin logo" class="inline-block h-5" />
-			Linkedin
-		</a>
-		<a
-			href="mailto:contact@gbdx.fr"
-			class="glass p-2 hover:bg-blue-500/40 font-bold flex items-center gap-2"
-		>
-			<img src={linkedinLogo} alt="Linkedin logo" class="inline-block h-5" />
-			Linkedin
-		</a>
+<!--<header class="sticky z-10 top-0 flex justify-between md:grid md:grid-cols-3 gap-2 items-start">-->
+<!--	<div>-->
+<!--		<a-->
+<!--			href="www.linkedin.com/in/guillaume-bdx"-->
+<!--			class="glass p-2 hover:bg-blue-500/40 font-bold flex items-center gap-2"-->
+<!--		>-->
+<!--			<img src={linkedinLogo} alt="Linkedin logo" class="inline-block h-5" />-->
+<!--			Linkedin-->
+<!--		</a>-->
+<!--		<a-->
+<!--			href="mailto:contact@gbdx.fr"-->
+<!--			class="glass p-2 hover:bg-blue-500/40 font-bold flex items-center gap-2"-->
+<!--		>-->
+<!--			<span class="text-xl">📧</span>-->
+<!--			contact@gbdx.fr-->
+<!--		</a>-->
+<!--	</div>-->
+
+<!--	<div class="glass p-2 md:p-4 text-center col-start-2">-->
+<!--		<h1 class="text-lg md:text-xl lg:text-2xl xl:text-4xl font-medium mb-2">Guillaume Berdeaux</h1>-->
+<!--		<h2 class="text-sm md:text-md lg:text-lg xl:text-xl font-mono">Software Engineer</h2>-->
+<!--	</div>-->
+
+<!--	<div class="glass p-1 md:p-2 lg:p-4 justify-self-end">-->
+<!--		<ThemeSwitcher />-->
+<!--	</div>-->
+<!--</header>-->
+
+<header class="glass p-4 flex justify-between md:grid md:grid-cols-3 gap-2 items-center">
+	<div class="hidden md:block">
+		<div class="text-2xl">Guillaume Berdeaux</div>
+		<div class="font-mono">Software Engineer</div>
 	</div>
 
-	<div class="glass p-2 md:p-4 text-center col-start-2">
-		<h1 class="text-lg md:text-xl lg:text-2xl xl:text-4xl font-medium mb-2">Guillaume Berdeaux</h1>
-		<h2 class="text-sm md:text-md lg:text-lg xl:text-xl font-mono">Software Engineer</h2>
+	<div
+		class="hidden md:grid md:grid-cols-4 text-center text-lg divide-x divide-black dark:divide-zinc-200"
+	>
+		{#each links as link}
+			<a
+				href={link.url}
+				class="hover:underline {$page.url.pathname === link.url ? 'text-green-500' : ''}"
+				>{link.label}</a
+			>
+		{/each}
 	</div>
 
-	<div class="glass p-1 md:p-2 lg:p-4 justify-self-end">
+	<button on:click={toggleIsMenuOpen} class="md:hidden">Menu</button>
+
+	<div class="justify-self-end">
 		<ThemeSwitcher />
 	</div>
 </header>
+
+{#if isMenuOpen}
+	<div
+		class="fixed top-0 right-0 left-0 bottom-0 z-10 p-8 backdrop-brightness-50 backdrop-blur-3xl"
+	>
+		<div class=" h-full rounded-lg shadow-lg p-6 glass">
+			<button
+				type="button"
+				class="absolute top-5 right-5 w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+				tabindex="0"
+				on:click={toggleIsMenuOpen}
+				><span class="sr-only">Close navigation</span>
+				<svg viewBox="0 0 10 10" class="w-2.5 h-2.5 overflow-visible" aria-hidden="true">
+					<path
+						d="M0 0L10 10M10 0L0 10"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+					></path>
+				</svg>
+			</button>
+			<ul class="space-y-6">
+				{#each links as link}
+					<li>
+						<a
+							href={link.url}
+							on:click={toggleIsMenuOpen}
+							class="hover:underline {$page.url.pathname === link.url ? 'text-green-500' : ''}"
+						>
+							{link.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</div>
+	</div>
+{/if}
