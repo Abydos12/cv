@@ -15,9 +15,9 @@
 <!--</div>-->
 
 <div class="h-full flex items-center justify-center">
-	<div class="glass bg-zinc-700/30 p-8 h-5/6 w-5/6 flex flex-col">
-		<div class="text-6xl">Guillaume Berdeaux</div>
-		<div class="text-3xl font-mono">Software Engineer</div>
+	<div class="glass p-4 lg:p-8 h-full w-full lg:h-5/6 lg:w-5/6 flex flex-col">
+		<div class="text-3xl lg:text-6xl">Guillaume Berdeaux</div>
+		<div class="text-lg lg:text-3xl font-mono">Software Engineer</div>
 		<p class="flex-1">text</p>
 		<a href="/guillaume-berdeaux.cv.pdf" class="self-end border border-white/20 p-4 rounded hover:border-green-500 hover:text-green-500">Download my CV (pdf)</a>
 	</div>
