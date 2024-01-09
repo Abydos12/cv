@@ -1,8 +1,10 @@
 <script>
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
+	import Menu from 'carbon-icons-svelte/lib/Menu.svelte';
 	import linkedinLogo from '$lib/icons/linkedin-logo.svg';
 	import { page } from '$app/stores';
 	import { applyMode, mode, modes } from '$lib/tools/darkMode.js';
+	import { Close, CloseLarge } from 'carbon-icons-svelte';
 
 	const links = [
 		{ url: '/', label: 'Home' },
@@ -67,7 +69,9 @@
 		{/each}
 	</div>
 
-	<button on:click={toggleIsMenuOpen} class="lg:hidden">Menu</button>
+	<button on:click={toggleIsMenuOpen} class="lg:hidden">
+		<Menu class="w-8 h-8" />
+	</button>
 
 	<div class="justify-self-end max-lg:hidden">
 		<ThemeSwitcher />
@@ -77,50 +81,28 @@
 {#if isMenuOpen}
 	<div
 		class:hidden={!isMenuOpen}
-		class="fixed top-0 right-0 left-0 bottom-0 z-10 p-8  dark:backdrop-brightness-50 backdrop-blur-3xl"
+		class="fixed top-0 right-0 left-0 bottom-0 z-10 p-8 dark:backdrop-brightness-50 backdrop-blur-3xl"
 	>
-		<div class="h-full rounded-lg shadow-lg p-6 glass">
-			<button
-				type="button"
-				class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-				tabindex="0"
-				on:click={toggleIsMenuOpen}
-				><span class="sr-only">Close navigation</span>
-				<svg viewBox="0 0 10 10" class="w-2.5 h-2.5 overflow-visible" aria-hidden="true">
-					<path
-						d="M0 0L10 10M10 0L0 10"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-					></path>
-				</svg>
+		<div class=" flex flex-col h-full rounded-lg shadow-lg p-6 glass">
+			<button class="absolute top-6 right-6" on:click={toggleIsMenuOpen}>
+				<CloseLarge class="h-6 w-6" />
 			</button>
-			<ul class="space-y-6">
+			<ul class=" flex-1 space-y-6">
 				{#each links as link}
 					<li>
 						<a
 							href={link.url}
 							on:click={toggleIsMenuOpen}
-							class="hover:underline {$page.url.pathname === link.url ? 'text-green-500' : ''}"
+							class="hover:underline {$page.url.pathname === link.url
+								? 'text-red-600 dark:text-green-500'
+								: ''}"
 						>
 							{link.label}
 						</a>
 					</li>
 				{/each}
 			</ul>
-			<div class="absolute bottom-4 right-4 left-4 grid grid-cols-3">
-				{#each modes as { name, symbol }}
-					<button
-						class="p-2 box-border border rounded {$mode === name
-							? 'glass'
-							: 'border-transparent hover:bg-zinc-400/40'}"
-						on:click={() => applyMode(name)}
-					>
-						{symbol}
-					</button>
-				{/each}
-			</div>
+			<ThemeSwitcher />
 		</div>
 	</div>
 {/if}

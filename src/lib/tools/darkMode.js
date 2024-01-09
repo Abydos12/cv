@@ -1,9 +1,10 @@
 import { writable } from 'svelte/store';
+import { Light, Moon, Screen } from 'carbon-icons-svelte';
 
 export const modes = [
-	{ name: 'light', symbol: '🌕' },
-	{ name: 'dark', symbol: '🌑' },
-	{ name: 'system', symbol: ' 🌓' }
+	{ name: 'light', label: 'Light', symbol: '🌕', icon: Light },
+	{ name: 'dark', label: 'Dark', symbol: '🌑', icon: Moon },
+	{ name: 'system', label: 'System', symbol: ' 🌓', icon: Screen }
 ];
 
 export const mode = writable(getDefaultMode());
@@ -25,7 +26,7 @@ export function applyMode(m) {
 	}
 }
 
-mode.subscribe(m => {
+mode.subscribe((m) => {
 	if (
 		m === 'dark' ||
 		(m === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
@@ -34,4 +35,4 @@ mode.subscribe(m => {
 	} else {
 		document.documentElement.classList.remove('dark');
 	}
-})
+});
