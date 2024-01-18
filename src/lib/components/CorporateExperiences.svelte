@@ -2,6 +2,7 @@
 	import typescriptLogo from '$lib/icons/typescript-logo.svg';
 	import pythonLogo from '$lib/icons/python-logo.svg';
 	import IconTag from '$lib/components/IconTag.svelte';
+	import { DocumentDownload, Launch } from 'carbon-icons-svelte';
 </script>
 
 <h2 class="text-2xl font-bold">
@@ -26,3 +27,5 @@
 </div>
 <IconTag logo={pythonLogo} label="Python" />
 <IconTag logo={typescriptLogo} label="Typescript" />
+
+

@@ -1,10 +1,8 @@
 <script>
 	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
 	import Menu from 'carbon-icons-svelte/lib/Menu.svelte';
-	import linkedinLogo from '$lib/icons/linkedin-logo.svg';
 	import { page } from '$app/stores';
-	import { applyMode, mode, modes } from '$lib/tools/darkMode.js';
-	import { Close, CloseLarge } from 'carbon-icons-svelte';
+	import { CloseLarge } from 'carbon-icons-svelte';
 
 	const links = [
 		{ url: '/', label: 'Home' },
@@ -49,7 +47,7 @@
 <!--</header>-->
 
 <header
-	class="glass p-4 flex justify-between lg:grid lg:grid-flow-col lg:auto-cols-max gap-2 items-center"
+	class="glass p-4 flex justify-between lg:grid lg:grid-flow-col lg:auto-cols-max gap-2 items-center sticky top-0 z-10"
 >
 	<div class="">
 		<div class="text-lg lg:text-2xl">Guillaume Berdeaux</div>
@@ -62,7 +60,7 @@
 		{#each links as link}
 			<a
 				href={link.url}
-				class="px-4 hover:underline {$page.url.pathname === link.url ? 'text-green-500' : ''}"
+				class="px-4 hover:underline {$page.url.pathname === link.url ? 'text-red-600 dark:text-green-500' : ''}"
 			>
 				{link.label}
 			</a>
