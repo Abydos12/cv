@@ -2,15 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    body {
-        @apply bg-cover bg-fixed bg-no-repeat bg-center bg-[url('$lib/img/bg-light-5.jpg')] dark:bg-[url('$lib/img/bg-dark-compact.jpg')] dark:text-zinc-200;
-    }
+  body {
+    @apply bg-cover bg-fixed bg-no-repeat bg-center bg-[url('$lib/img/bg-light-5.jpg')] dark:bg-[url('$lib/img/bg-dark-compact.jpg')] dark:text-zinc-200;
+  }
 }
 
 @layer components {
-    .glass {
-        @apply bg-zinc-400/30 dark:bg-zinc-700/30 border border-zinc-500/40 dark:border-white/20 backdrop-blur-md shadow-xl rounded-lg backdrop-saturate-200;
-    }
+  .glass {
+    @apply bg-zinc-400/30 dark:bg-zinc-700/30 border border-zinc-500/40 dark:border-white/20 backdrop-blur-md shadow-xl rounded-lg backdrop-saturate-200;
+  }
 }
