@@ -1,9 +1,8 @@
 name: Docker
 
 on:
-  push:
-    branches: [ "main" ]
-    tags: [ "v*.*.*" ]
+  release:
+    types: [ published ]
 
 env:
   IMAGE_NAME: abydos12/cv
