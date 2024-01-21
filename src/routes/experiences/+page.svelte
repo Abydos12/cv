@@ -6,6 +6,4 @@
 			<div class="text-lg lg:text-3xl font-mono">Software Engineer</div>
 			<p class="flex-1 mt-4 text-lg"></p>
 		</div>
-
-
 </div>
