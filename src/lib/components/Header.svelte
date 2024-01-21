@@ -22,7 +22,7 @@
   class="glass p-4 flex justify-between lg:grid lg:grid-flow-col lg:auto-cols-max gap-2 items-center sticky top-0 z-10"
 >
   <div>
-    <div class="text-lg lg:text-2xl">Guillaume Berdeaux</div>
+    <div class="text-lg lg:text-2xl font-medium">Guillaume Berdeaux</div>
     <div class="font-mono text-xs lg:text-md xl:text-lg">Software Engineer</div>
   </div>
 
@@ -32,7 +32,7 @@
     {#each links as link}
       <a
         href={link.url}
-        class="px-4 hover:underline {$page.url.pathname === link.url
+        class="px-4 hover:underline font-medium {$page.url.pathname === link.url
           ? 'text-red-600 dark:text-green-500'
           : ''}"
       >
@@ -65,7 +65,7 @@
             <a
               href={link.url}
               on:click={toggleIsMenuOpen}
-              class="hover:underline {$page.url.pathname === link.url
+              class="hover:underline font-medium {$page.url.pathname === link.url
                 ? 'text-red-600 dark:text-green-500'
                 : ''}"
             >

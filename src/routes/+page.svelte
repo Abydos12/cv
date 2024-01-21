@@ -1,8 +1,5 @@
 <script>
-  import Education from "$lib/components/CorporateExperiences.svelte";
-  import IconTag from "$lib/components/IconTag.svelte";
-  import linkedinLogo from "$lib/icons/linkedin-logo.svg";
-  import { DocumentDownload, Download, Launch } from "carbon-icons-svelte";
+  import { DocumentDownload, Launch } from "carbon-icons-svelte";
 
   const cv_links = [
     { lang: "English", url: "/guillaume-berdeaux.cv.en.pdf" },
