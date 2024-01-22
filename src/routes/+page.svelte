@@ -7,19 +7,23 @@
   ];
 </script>
 
-<div class="h-full flex items-center justify-center">
-  <div class="glass p-4 lg:p-8 h-full w-full lg:h-5/6 lg:w-5/6 flex flex-col">
+<div class="h-full flex flex-col items-center justify-center gap-4">
+  <div class="glass p-4 lg:p-8 w-full lg:w-5/6 flex flex-col">
     <div class="text-3xl lg:text-6xl">Guillaume Berdeaux</div>
     <div class="text-lg lg:text-3xl font-mono">Software Engineer</div>
     <p class="flex-1 mt-4 text-lg">I'm a passionate Software Engineer, TODO</p>
-    <div class="flex flex-col items-end gap-2">
-      <small>Want my CV in PDF ? this way...</small>
+  </div>
+
+  <div class="flex flex-col gap-2 max-md:w-5/6">
+    <small>Want my CV in PDF ? this way...</small>
+    <div class="flex max-md:flex-col gap-2">
       {#each cv_links as link}
-        <div class="flex">
+        <div class="glass text-center divide-y divide-zinc-500/40 dark:divide-white/20">
+          <div class="p-2">{link.lang}</div>
           <div
-            class="glass bg-zinc-300/20 divide-x divide-zinc-500/40 dark:divide-white/20 p-2"
+            class="divide-x divide-zinc-500/40 dark:divide-white/20 grid grid-cols-2"
           >
-            <span class="p-2">{link.lang}</span>
+
             <a
               href={link.url}
               target="_blank"
@@ -41,5 +45,6 @@
         </div>
       {/each}
     </div>
+
   </div>
 </div>
