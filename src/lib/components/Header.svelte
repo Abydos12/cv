@@ -8,7 +8,8 @@
     { url: "/", label: "Home" },
     { url: "/experiences", label: "Experiences" },
     { url: "/education", label: "Education" },
-    { url: "/about", label: "About" },
+    { url: "/skills", label: "Skills" },
+    { url: "/contact", label: "Contact" },
   ];
 
   let isMenuOpen = false;
@@ -27,12 +28,12 @@
   </div>
 
   <div
-    class="hidden lg:grid lg:grid-cols-4 text-center text-lg divide-x divide-black dark:divide-zinc-200"
+    class="hidden lg:grid lg:grid-cols-5 text-center xl:text-lg divide-x divide-black dark:divide-zinc-200"
   >
     {#each links as link}
       <a
         href={link.url}
-        class="px-4 hover:underline font-medium {$page.url.pathname === link.url
+        class="px-2 xl:px-4 hover:underline font-medium {$page.url.pathname === link.url
           ? 'text-red-600 dark:text-green-500'
           : ''}"
       >
