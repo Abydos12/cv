@@ -4,9 +4,9 @@ const config = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     extend: {
-      blur: {
-        xs: "2px",
-      },
+      listStyleType: {
+        square: 'square',
+      }
     },
   },
   plugins: [],
