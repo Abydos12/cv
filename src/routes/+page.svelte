@@ -28,7 +28,7 @@
         Have a online CV
       </li>
     </ul>
-    <a href="/skills#cv" class="underline hover:decoration-red-600">
+    <a href="/skills#cv" class="underline hover:decoration-red-600  dark:hover:decoration-green-600">
       Curious about how I built and deployed this app, this way...
     </a>
 

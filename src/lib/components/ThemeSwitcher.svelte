@@ -11,7 +11,7 @@
 			on:click={() => applyMode(name)}
 		>
 			<svelte:component this={icon} class="h-6 w-6 inline-block" />
-			<span class="font-medium">
+			<span>
 					{label}
 			</span>
 		</button>
