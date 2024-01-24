@@ -10,6 +10,6 @@
 
 @layer components {
   .glass {
-    @apply bg-zinc-400/30 dark:bg-zinc-700/30 border border-zinc-500/40 dark:border-white/20 backdrop-blur-md shadow-xl rounded-lg backdrop-saturate-200;
+    @apply bg-zinc-300/30 dark:bg-zinc-700/30 border-2 border-zinc-100/40 dark:border-zinc-800/40 backdrop-blur-md shadow-xl rounded-lg backdrop-saturate-200;
   }
 }
