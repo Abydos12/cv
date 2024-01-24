@@ -8,13 +8,13 @@
 </script>
 
 <div class="h-full flex flex-col items-center justify-center gap-4">
-  <div class="glass p-4 lg:p-8 w-full lg:w-5/6 flex flex-col text-lg gap-4">
+  <div class="glass p-4 lg:p-8 w-full lg:w-5/6 flex flex-col gap-4 lg:gap-8">
     <div>
       <div class="text-3xl lg:text-6xl">Guillaume Berdeaux</div>
-      <div class="lg:text-3xl font-mono">Software Engineer</div>
+      <div class="text-lg lg:text-3xl font-mono">Software Engineer</div>
     </div>
 
-    <p>
+    <p class="text-lg lg:text-4xl">
       I'm a passionate Software Engineer and computer technologies enthusiast. I
       love to try and experiment new technologies. Constantly seeking new ways
       to build and improve software.

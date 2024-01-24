@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-cover bg-fixed bg-no-repeat bg-center bg-[url('$lib/img/bg-light-5.jpg')] dark:bg-[url('$lib/img/bg-dark-compact.jpg')] dark:text-zinc-200;
+    @apply bg-cover bg-fixed bg-no-repeat bg-center bg-[url('$lib/img/bg-light-5.jpg')] dark:bg-[url('$lib/img/bg-dark-compact.jpg')] text-zinc-800/85 dark:text-zinc-200/85;
   }
 }
 
