@@ -22,10 +22,10 @@
 <header
   class="glass p-4 flex justify-between lg:grid lg:grid-flow-col lg:auto-cols-max gap-2 items-center sticky top-0 z-10"
 >
-  <div>
+  <a href="/" class="hover:underline">
     <div class="text-lg lg:text-2xl font-medium">Guillaume Berdeaux</div>
     <div class="font-mono text-xs lg:text-md xl:text-lg">Software Engineer</div>
-  </div>
+  </a>
 
   <div
     class="hidden lg:grid lg:grid-cols-5 text-center xl:text-lg divide-x divide-black dark:divide-zinc-200"
@@ -54,9 +54,9 @@
 {#if isMenuOpen}
   <div
     class:hidden={!isMenuOpen}
-    class="fixed top-0 right-0 left-0 bottom-0 z-10 p-8 dark:backdrop-brightness-50 backdrop-blur-3xl"
+    class="fixed top-0 right-0 left-0 bottom-0 z-10 p-8 dark:backdrop-brightness-50 backdrop-blur-3xl overflow-auto"
   >
-    <div class=" flex flex-col h-full rounded-lg shadow-lg p-6 glass">
+    <div class="glass flex flex-col h-full rounded-lg shadow-lg p-6 overflow-y-auto">
       <button class="absolute top-6 right-6" on:click={toggleIsMenuOpen}>
         <CloseLarge class="h-6 w-6" />
       </button>
@@ -75,7 +75,7 @@
           </li>
         {/each}
       </ul>
-      <div class="w-full">
+      <div class="w-full mt-2">
         <ThemeSwitcher />
       </div>
     </div>

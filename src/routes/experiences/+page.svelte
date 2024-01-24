@@ -14,6 +14,7 @@
           Full Stack Engineer (Apprenticeship)
         </div>
         <div class="lg:text-2xl font-semibold italic">Société Générale</div>
+        <div class="lg:text-2xl font-semibold italic">Paris, France</div>
       </div>
       <div
         class="text-sm lg:text-lg text-zinc-700 dark:text-zinc-400 font-semibold"
