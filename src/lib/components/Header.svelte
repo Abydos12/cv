@@ -56,7 +56,9 @@
     class:hidden={!isMenuOpen}
     class="fixed top-0 right-0 left-0 bottom-0 z-10 p-8 dark:backdrop-brightness-50 backdrop-blur-3xl overflow-auto"
   >
-    <div class="glass flex flex-col h-full rounded-lg shadow-lg p-6 overflow-y-auto">
+    <div
+      class="glass flex flex-col h-full rounded-lg shadow-lg p-6 overflow-y-auto"
+    >
       <button class="absolute top-6 right-6" on:click={toggleIsMenuOpen}>
         <CloseLarge class="h-6 w-6" />
       </button>

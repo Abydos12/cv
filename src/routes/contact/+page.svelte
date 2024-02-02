@@ -18,7 +18,11 @@
     href="https://www.linkedin.com/in/guillaume-bdx"
     target="_blank"
   >
-    <img alt="Linkedin logo" class="w-6 lg:w-8 h-6 lg:h-8 inline-block" src={linkedinLogo} />
+    <img
+      alt="Linkedin logo"
+      class="w-6 lg:w-8 h-6 lg:h-8 inline-block"
+      src={linkedinLogo}
+    />
     <span>Linkedin</span>
   </a>
 </div>

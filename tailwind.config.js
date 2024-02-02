@@ -5,8 +5,8 @@ const config = {
   theme: {
     extend: {
       listStyleType: {
-        square: 'square',
-      }
+        square: "square",
+      },
     },
   },
   plugins: [],

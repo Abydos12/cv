@@ -22,16 +22,17 @@
     <ul class="list-square list-inside">
       I built this website for two main reasons:
       <li>
-        Learn Svelte, Tailwindcss and show some of my skills about web development, self-hosting and deployment
+        Learn Svelte, Tailwindcss and show some of my skills about web
+        development, self-hosting and deployment
       </li>
-      <li>
-        Have a online CV
-      </li>
+      <li>Have a online CV</li>
     </ul>
-    <a href="/skills#cv" class="underline hover:decoration-red-600  dark:hover:decoration-green-600">
+    <a
+      href="/skills#cv"
+      class="underline hover:decoration-red-600 dark:hover:decoration-green-600"
+    >
       Curious about how I built and deployed this app, this way...
     </a>
-
   </div>
 
   <div class="flex flex-col gap-2 max-md:w-5/6">
