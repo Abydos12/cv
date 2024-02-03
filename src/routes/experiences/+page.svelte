@@ -5,6 +5,13 @@
 
   const experiences = [
     {
+      title: "Full Stack Engineer (VIE)",
+      company: "Société Générale",
+      location: "Manhattan, NY, United States",
+      dates: { start: "November 2022", end: "April 2024" },
+      missions: [],
+    },
+    {
       title: "Full Stack Engineer (Apprenticeship)",
       company: "Société Générale",
       location: "Paris, France",
@@ -18,6 +25,13 @@
         "Automation scripts that interact with different applications",
         "CD / CI with Github, Jenkins and Kubernetes",
       ],
+    },
+    {
+      title: "Full Stack Developer (Internship)",
+      company: "Société Générale",
+      location: "Paris, France",
+      dates: { start: "April 2019", end: "June 2019" },
+      missions: [],
     },
   ];
 </script>
