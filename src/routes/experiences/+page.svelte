@@ -45,7 +45,7 @@
   ];
 </script>
 
-<div class="h-full flex flex-col gap-4 lg:gap-6">
+<div class="h-full flex flex-col gap-4 lg:gap-8 lg:w-5/6 2xl:w-4/6 m-auto">
   {#each experiences as e}
     <div class="glass">
       <div

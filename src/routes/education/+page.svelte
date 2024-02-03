@@ -1,7 +1,7 @@
 <script>
   const educations = [
     {
-      period: {
+      dates: {
         start: "September 2019",
         end: "September 2022",
       },
@@ -16,7 +16,7 @@
       tags: "Engineering Degree – Computer Science – Software Engineering - Computer Engineering",
     },
     {
-      period: {
+      dates: {
         start: "September 2017",
         end: "September 2019",
       },
@@ -44,8 +44,8 @@
         <div
           class="text-sm lg:text-lg text-zinc-700 dark:text-zinc-400 font-semibold"
         >
-          <div>{e.period.start}</div>
-          <div>{e.period.end}</div>
+          <div>{e.dates.start}</div>
+          <div>{e.dates.end}</div>
         </div>
       </div>
       <div class="p-8 flex flex-col gap-4 lg:gap-8">
