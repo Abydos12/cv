@@ -1,15 +1,18 @@
 <script>
-  import pythonLogo from "$lib/icons/python-logo.svg";
-  import typescriptLogo from "$lib/icons/typescript-logo.svg";
-  import IconTag from "$lib/components/IconTag.svelte";
-
   const experiences = [
     {
       title: "Full Stack Engineer (VIE)",
       company: "Société Générale",
       location: "Manhattan, NY, United States",
       dates: { start: "November 2022", end: "April 2024" },
-      missions: [],
+      missions: [
+        "Design and develop an application to help the management of several processes",
+        "Web application developed on an REST Architecture",
+        "Front-end: Angular",
+        "Back-end: SpringBoot (Java) with PostgreSQL",
+        "Authentication and authorizations with OIDC (OpenID Connect)",
+        "Tools script with python",
+      ],
     },
     {
       title: "Full Stack Engineer (Apprenticeship)",
@@ -23,6 +26,7 @@
         "Back-end: Python REST API using FastAPI / Flask with SQLAlchemy (PostgreSQL)",
         "Front-end: Pure Javascript, SPA using React, Jinja templates",
         "Automation scripts that interact with different applications",
+        "Authentication and authorizations with OIDC (OpenID Connect)",
         "CD / CI with Github, Jenkins and Kubernetes",
       ],
     },
@@ -31,7 +35,12 @@
       company: "Société Générale",
       location: "Paris, France",
       dates: { start: "April 2019", end: "June 2019" },
-      missions: [],
+      missions: [
+        "Design and develop an application to improve the management of technical data previously stored on hundreds of Excel files",
+        "Web application developed on an REST Architecture",
+        "Front-end: Angular",
+        "Back-end: ExpressJS",
+      ],
     },
   ];
 </script>
@@ -62,8 +71,6 @@
             <li>{m}</li>
           {/each}
         </ul>
-        <IconTag label="Python" logo={pythonLogo} />
-        <IconTag label="Typescript" logo={typescriptLogo} />
       </div>
     </div>
   {/each}
