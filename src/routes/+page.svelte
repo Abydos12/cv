@@ -19,16 +19,16 @@
       love to try and experiment new technologies. Constantly seeking new ways
       to build and improve software.
     </p>
-    <ul class="list-square list-inside">
+    <ul class="list-square list-inside text-lg">
       I built this website for two main reasons:
       <li>
         Learn Svelte, Tailwindcss and show some of my skills about web
         development, self-hosting and deployment
       </li>
-      <li>Have a online CV</li>
+      <li>Have a online Resume</li>
     </ul>
     <a
-      href="/skills#cv"
+      href="/skills#resume-app"
       class="underline hover:decoration-red-600 dark:hover:decoration-green-600"
     >
       Curious about how I built and deployed this app, this way...
@@ -36,7 +36,7 @@
   </div>
 
   <div class="flex flex-col gap-2 max-md:w-5/6">
-    <small>Want my CV in PDF ? this way...</small>
+    <small>Want my Resume in PDF ? this way...</small>
     <div class="flex max-md:flex-col gap-2">
       {#each cv_links as link}
         <div

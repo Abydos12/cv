@@ -66,7 +66,7 @@
         </div>
       </div>
       <div class=" p-4 lg:p-8">
-        <ul class="list-square list-inside text-lg">
+        <ul class="list-square list-inside lg:text-lg">
           {#each e.missions as m}
             <li>{m}</li>
           {/each}
