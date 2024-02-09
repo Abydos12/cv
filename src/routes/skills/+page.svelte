@@ -3,33 +3,33 @@
     <div
       class="backdrop-brightness-100 dark:backdrop-brightness-150 p-4 lg:p-8 flex justify-between items-center"
     >
-      <div class="text-xl lg:text-3xl font-bold" id="resume-app">
+      <div class="text-xl lg:text-3xl" id="resume-app">
         RESUME WEBSITE
       </div>
     </div>
-    <div class=" p-4 lg:p-8">
+    <div class=" p-4 lg:p-8 text-lg font-mono">
       <p>
         I built this website in order to showcase my skills in design /
         development / deployment and extend my knowledge of software
         engineering.
       </p>
-
-      <span>Svelte:</span>
+      <br />
+      <span class="text-2xl font-bold">Svelte</span>
       <p>
         This website is built using the framework Svelte. It was for me the
         opportunity to try and learn that framework. I was interested in how
         Svelte is design differently than Angular or React, and wanted to be
         able to compare it with the others that I already tried.
       </p>
-
-      <span>Tailwindcss:</span>
+      <br />
+      <span class="text-2xl font-bold">Tailwindcss</span>
       <p>
         For the styling part, I didn't need a library full of components and
         didn't wanted to write only css. This is why I tried Tailwindcss, which
         is utility based. I also learn Tailwindcss while creating this website.
       </p>
-
-      <span>Deployment:</span>
+      <br />
+      <span class="text-2xl font-bold">Deployment</span>
       <p>
         This website is proudly deployed on my personal server (aka, a potato
         computer 🥔 running on Ubuntu, please don't break it)
@@ -51,22 +51,22 @@
         PERSONAL SERVER
       </div>
     </div>
-    <div class=" p-4 lg:p-8">
+    <div class=" p-4 lg:p-8 text-lg font-mono">
       <p>
         In 2019, when I was in engineering school, I started to use an computer
         (potato computer but still) as a server. My first ideas about this, was
         to have a (cheap) server for team project and personal projects. Since
         then, I had time to practice a lot on it.
       </p>
-
-      <span>At school</span>
+      <br />
+      <span class="text-2xl font-bold">At school</span>
       <p>
         I used to do a lot of projects for school and most of them were group
         projects. For instance, we needed databases, website hosting,
         application deployment, network administration among other things.
       </p>
-
-      <span>Networks</span>
+      <br />
+      <span class="text-2xl font-bold">Networks</span>
       <p>
         The main issue at first was remote access. At the time, I had no control
         of my home router, so no way to open ports. This is how I started to get
@@ -76,8 +76,8 @@
         Zerotier, I was able to have multiple P2P networks and it became really
         useful for group projects and remotely managing y server.
       </p>
-
-      <span>Monitoring and administration</span>
+      <br />
+      <span class="text-2xl font-bold">Monitoring and administration</span>
       <p>
         I experienced a lot on that server, but here an image of the current
         state. All the applications deployed on the server are containerized. To
@@ -96,24 +96,29 @@
         PROMETHEUS EXPORTER
       </div>
     </div>
-    <div class=" p-4 lg:p-8">
+    <div class=" p-4 lg:p-8 text-lg font-mono">
       <p>
         I created a prometheus exporter
         <a
-          class="underline hover:underline"
+          class="underline hover:decoration-red-600 dark:hover:decoration-green-600"
           href="https://github.com/Abydos12/minepy-metrics"
         >
           Minepy-metrics
         </a>
       </p>
+      <br />
       <p>
         It is an data exporter that export some Minecraft server information:
         player's stats, vitals, and server info
       </p>
-      <i>
-        Disclaimer: I put this project on hold because I have higher priorities,
-        but I'll definitely go back on it
-      </i>
+      <br />
+      <p>
+        <i>
+          Disclaimer: I put this project on hold because I have higher
+          priorities, but I'll definitely go back on it.
+        </i>
+      </p>
+      <br />
       <p>
         I started this project when I was at the beginning on my journey with
         python. At the time, I was discovering Prometheus, Grafana, learning
@@ -124,9 +129,8 @@
         that I wanted. So I started to create my own to challenged myself and
         also learn because I like to learn by practice.
       </p>
-      <p>
-        Years passed, I'm now with a better Python knowledge and new ideas.
-      </p>
+      <br />
+      <p>Years passed, I'm now with a better Python knowledge and new ideas.</p>
     </div>
   </div>
 </div>

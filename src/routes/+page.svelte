@@ -14,12 +14,12 @@
       <div class="text-lg lg:text-3xl font-mono">Software Engineer</div>
     </div>
 
-    <p class="text-lg lg:text-4xl">
+    <p class="text-lg lg:text-4xl font-mono">
       I'm a passionate Software Engineer and computer technologies enthusiast. I
       love to try and experiment new technologies. Constantly seeking new ways
       to build and improve software.
     </p>
-    <ul class="list-square list-inside text-lg">
+    <ul class="list-square list-inside text-lg font-mono">
       I built this website for two main reasons:
       <li>
         Learn Svelte, Tailwindcss and show some of my skills about web
@@ -29,7 +29,7 @@
     </ul>
     <a
       href="/skills#resume-app"
-      class="underline hover:decoration-red-600 dark:hover:decoration-green-600"
+      class="underline hover:decoration-red-600 dark:hover:decoration-green-600 font-mono"
     >
       Curious about how I built and deployed this app, this way...
     </a>

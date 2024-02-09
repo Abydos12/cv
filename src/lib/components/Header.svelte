@@ -28,7 +28,7 @@
   </a>
 
   <div
-    class="hidden lg:grid lg:grid-cols-5 text-center xl:text-lg divide-x divide-black dark:divide-zinc-200"
+    class="hidden lg:grid lg:grid-cols-5 text-center xl:text-lg divide-x divide-black dark:divide-zinc-200 font-mono"
   >
     {#each links as link}
       <a

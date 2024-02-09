@@ -2,7 +2,7 @@
   import { mode, modes, applyMode } from "$lib/tools/darkMode.js";
 </script>
 
-<div class="grid grid-cols-3 gap-1">
+<div class="grid grid-cols-3 gap-1 font-mono">
   {#each modes as { name, icon, label }}
     <button
       class="p-2 box-border border rounded flex items-center justify-center gap-2 {$mode ===

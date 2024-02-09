@@ -47,11 +47,11 @@
 
 <div class="h-full flex flex-col gap-4 lg:gap-8 lg:w-5/6 2xl:w-4/6 m-auto">
   {#each experiences as e}
-    <div class="glass">
+    <div class="glass font-mono">
       <div
         class="backdrop-brightness-100 dark:backdrop-brightness-150 p-4 lg:p-8 flex justify-between items-center"
       >
-        <div class="font-mono">
+        <div>
           <div class="text-xl lg:text-3xl font-bold">
             {e.title}
           </div>
