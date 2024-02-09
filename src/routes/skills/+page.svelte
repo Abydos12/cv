@@ -47,7 +47,7 @@
     <div
       class="backdrop-brightness-100 dark:backdrop-brightness-150 p-4 lg:p-8 flex justify-between items-center"
     >
-      <div class="text-xl lg:text-3xl font-bold" id="resume-app">
+      <div class="text-xl lg:text-3xl font-bold" id="personal-server">
         PERSONAL SERVER
       </div>
     </div>
@@ -79,7 +79,53 @@
 
       <span>Monitoring and administration</span>
       <p>
-        
+        I experienced a lot on that server, but here an image of the current
+        state. All the applications deployed on the server are containerized. To
+        manage them, I use Portainer, an open source application that you can
+        self-host. I also use Grafana and Prometheus for system and application
+        monitoring. For internet exposed application, I use Traefik for
+        reverse-proxy and TLS certificates management.
+      </p>
+    </div>
+  </div>
+  <div class="glass">
+    <div
+      class="backdrop-brightness-100 dark:backdrop-brightness-150 p-4 lg:p-8 flex justify-between items-center"
+    >
+      <div class="text-xl lg:text-3xl font-bold" id="minepy-metrics">
+        PROMETHEUS EXPORTER
+      </div>
+    </div>
+    <div class=" p-4 lg:p-8">
+      <p>
+        I created a prometheus exporter
+        <a
+          class="underline hover:underline"
+          href="https://github.com/Abydos12/minepy-metrics"
+        >
+          Minepy-metrics
+        </a>
+      </p>
+      <p>
+        It is an data exporter that export some Minecraft server information:
+        player's stats, vitals, and server info
+      </p>
+      <i>
+        Disclaimer: I put this project on hold because I have higher priorities,
+        but I'll definitely go back on it
+      </i>
+      <p>
+        I started this project when I was at the beginning on my journey with
+        python. At the time, I was discovering Prometheus, Grafana, learning
+        python, docker and playing Minecraft with friends (self-hosted server of
+        course). Then I told myself, "That would be nice to have a Grafana
+        dashboard with the data of the Minecraft server". I started to search
+        for some exporters and found one, but it wasn't exporting everything
+        that I wanted. So I started to create my own to challenged myself and
+        also learn because I like to learn by practice.
+      </p>
+      <p>
+        Years passed, I'm now with a better Python knowledge and new ideas.
       </p>
     </div>
   </div>
