@@ -1,9 +1,11 @@
 <script>
   import { DocumentDownload, Launch } from "carbon-icons-svelte";
+  import cvEnglish from "$lib/assets/guillaume.berdeaux.cv.en.pdf";
+  import cvFrench from "$lib/assets/guillaume.berdeaux.cv.fr.pdf";
 
   const cv_links = [
-    { lang: "English", url: "/guillaume-berdeaux.cv.en.pdf" },
-    { lang: "French", url: "/guillaume-berdeaux.cv.fr.pdf" },
+    { lang: "English", url: cvEnglish },
+    { lang: "French", url: cvFrench },
   ];
 </script>
 
@@ -28,8 +30,8 @@
       <li>Have a online Resume</li>
     </ul>
     <a
-      href="/skills#resume-app"
       class="underline hover:decoration-red-600 dark:hover:decoration-green-600 font-mono"
+      href="/skills#resume-app"
     >
       Curious about how I built and deployed this app, this way...
     </a>
