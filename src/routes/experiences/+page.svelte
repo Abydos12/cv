@@ -1,7 +1,7 @@
 <script>
   const experiences = [
     {
-      title: "Full Stack Engineer (VIE)",
+      title: "Full Stack Software Engineer",
       company: "Société Générale",
       location: "Manhattan, NY, United States",
       dates: { start: "November 2022", end: "April 2024" },
@@ -15,7 +15,7 @@
       ],
     },
     {
-      title: "Full Stack Engineer (Apprenticeship)",
+      title: "Full Stack Software Developer (Apprenticeship)",
       company: "Société Générale",
       location: "Paris, France",
       dates: { start: "September 2019", end: "September 2022" },
@@ -31,7 +31,7 @@
       ],
     },
     {
-      title: "Full Stack Developer (Internship)",
+      title: "Full Stack Software Developer (Internship)",
       company: "Société Générale",
       location: "Paris, France",
       dates: { start: "April 2019", end: "June 2019" },
