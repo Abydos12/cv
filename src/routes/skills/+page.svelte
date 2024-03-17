@@ -5,7 +5,9 @@
     <div
       class="backdrop-brightness-100 dark:backdrop-brightness-150 p-4 lg:p-8 flex justify-between items-center"
     >
-      <div class="text-xl lg:text-3xl font-bold" id="resume-app">RESUME WEBSITE</div>
+      <div class="text-xl lg:text-3xl font-bold" id="resume-app">
+        RESUME WEBSITE
+      </div>
     </div>
     <div class=" p-4 lg:p-8 font-mono">
       <p>

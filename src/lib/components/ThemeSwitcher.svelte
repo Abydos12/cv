@@ -11,7 +11,10 @@
         : 'border-transparent hover:bg-zinc-400/40'}"
       on:click={() => applyMode(name)}
     >
-      <svelte:component this={icon} class="h-6 w-6 inline-block flex-shrink-0" />
+      <svelte:component
+        this={icon}
+        class="h-6 w-6 inline-block flex-shrink-0"
+      />
       <span class="max-md:text-sm">
         {label}
       </span>
