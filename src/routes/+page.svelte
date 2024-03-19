@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { DocumentDownload, Launch } from "carbon-icons-svelte";
   import cvEnglish from "$lib/assets/guillaume.berdeaux.cv.en.pdf";
   import cvFrench from "$lib/assets/guillaume.berdeaux.cv.fr.pdf";

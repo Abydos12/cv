@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   const experiences = [
     {
       title: "Full Stack Software Engineer",

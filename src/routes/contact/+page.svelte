@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { Email } from "carbon-icons-svelte";
   import linkedinLogo from "$lib/icons/linkedin-logo.svg";
 </script>

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import sveltekitLogo from "$lib/icons/sveltekit-logo.svg";
   import TailwindcssLogo from "$lib/components/logos/TailwindcssLogo.svelte";
 </script>

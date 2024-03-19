@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
   import Menu from "carbon-icons-svelte/lib/Menu.svelte";
   import { page } from "$app/stores";

@@ -1,15 +1,15 @@
-<script>
-  import { mode, modes, applyMode } from "$lib/tools/darkMode.js";
+<script lang="ts">
+  import { theme, themes, applyTheme } from "$lib/tools/app-theme";
 </script>
 
 <div class="grid grid-cols-3 gap-1 font-mono">
-  {#each modes as { name, icon, label }}
+  {#each themes as { name, icon, label }}
     <button
-      class="p-1 md:p-2 box-border border rounded flex items-center justify-center gap-2 {$mode ===
+      class="box-border flex items-center justify-center gap-2 rounded border p-1 md:p-2 {$theme ===
       name
         ? 'glass text-red-600 dark:text-green-500 bg-zinc-300/20'
         : 'border-transparent hover:bg-zinc-400/40'}"
-      on:click={() => applyMode(name)}
+      on:click={() => applyTheme(name)}
     >
       <svelte:component
         this={icon}
