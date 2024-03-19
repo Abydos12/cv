@@ -4,23 +4,23 @@
 </script>
 
 <div
-  class="h-full flex flex-col justify-center text-center gap-4 lg:text-3xl lg:w-3/6 xl:w-3/12 mx-auto"
+  class="mx-auto flex h-full flex-col justify-center gap-4 text-center lg:w-3/6 lg:text-3xl xl:w-3/12"
 >
   <a
-    class="glass p-4 font-mono hover:underline flex items-center justify-center gap-2"
+    class="glass flex items-center justify-center gap-2 p-4 font-mono hover:underline"
     href="mailto:contact@gbdx.fr"
   >
-    <Email class="w-6 lg:w-8 h-6 lg:h-8 inline-block" />
+    <Email class="inline-block h-6 w-6 lg:h-8 lg:w-8" />
     <span>contact@gbdx.fr</span>
   </a>
   <a
-    class="glass p-4 font-mono hover:underline flex items-center justify-center gap-2"
+    class="glass flex items-center justify-center gap-2 p-4 font-mono hover:underline"
     href="https://www.linkedin.com/in/guillaume-bdx"
     target="_blank"
   >
     <img
       alt="Linkedin logo"
-      class="w-6 lg:w-8 h-6 lg:h-8 inline-block"
+      class="inline-block h-6 w-6 lg:h-8 lg:w-8"
       src={linkedinLogo}
     />
     <span>Linkedin</span>

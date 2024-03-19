@@ -34,21 +34,21 @@
   ];
 </script>
 
-<div class="h-full flex flex-col gap-4 lg:gap-8 lg:w-5/6 2xl:w-4/6 m-auto">
+<div class="m-auto flex h-full flex-col gap-4 lg:w-5/6 lg:gap-8 2xl:w-4/6">
   {#each educations as e}
     <section class="glass font-mono">
       <div
-        class="backdrop-brightness-100 dark:backdrop-brightness-150 p-4 lg:p-8 flex justify-between items-center"
+        class="flex items-center justify-between p-4 backdrop-brightness-100 dark:backdrop-brightness-150 lg:p-8"
       >
-        <div class="text-xl lg:text-4xl font-bold font-mono">{e.school}</div>
+        <div class="font-mono text-xl font-bold lg:text-4xl">{e.school}</div>
         <div
-          class="text-sm lg:text-lg text-zinc-700 dark:text-zinc-400 font-semibold"
+          class="text-sm font-semibold text-zinc-700 dark:text-zinc-400 lg:text-lg"
         >
           <div>{e.dates.start}</div>
           <div>{e.dates.end}</div>
         </div>
       </div>
-      <div class="p-8 flex flex-col gap-4 lg:gap-8">
+      <div class="flex flex-col gap-4 p-8 lg:gap-8">
         <p class="font-semibold lg:text-xl">{e.diploma.title}</p>
         <p class="lg:text-lg"><i>{e.details}</i></p>
         <p class="lg:text-lg">{e.description}</p>

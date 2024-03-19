@@ -9,19 +9,19 @@
   ];
 </script>
 
-<div class="h-full flex flex-col items-center justify-center gap-4">
-  <div class="glass p-4 lg:p-8 w-full lg:w-5/6 flex flex-col gap-4 lg:gap-8">
+<div class="flex h-full flex-col items-center justify-center gap-4">
+  <div class="glass flex w-full flex-col gap-4 p-4 lg:w-5/6 lg:gap-8 lg:p-8">
     <div>
       <div class="text-3xl lg:text-6xl">Guillaume Berdeaux</div>
-      <div class="text-lg lg:text-3xl font-mono">Software Engineer</div>
+      <div class="font-mono text-lg lg:text-3xl">Software Engineer</div>
     </div>
 
-    <p class="text-lg lg:text-4xl font-mono">
+    <p class="font-mono text-lg lg:text-4xl">
       I'm a passionate Software Engineer and computer technologies enthusiast. I
       love to try and experiment new technologies. Constantly seeking new ways
       to build and improve software.
     </p>
-    <ul class="list-square list-inside text-lg font-mono">
+    <ul class="list-inside list-square font-mono text-lg">
       I built this website for two main reasons:
       <li>
         Learn Svelte, Tailwindcss and show some of my skills about web
@@ -30,7 +30,7 @@
       <li>Have a online Resume</li>
     </ul>
     <a
-      class="underline hover:decoration-red-600 dark:hover:decoration-green-600 font-mono"
+      class="font-mono underline hover:decoration-red-600 dark:hover:decoration-green-600"
       href="/skills#resume-app"
     >
       Curious about how I built and deployed this app, this way...
@@ -39,14 +39,14 @@
 
   <div class="flex flex-col gap-2 max-md:w-5/6">
     <small>Want my Resume in PDF ? this way...</small>
-    <div class="flex max-md:flex-col gap-2">
+    <div class="flex gap-2 max-md:flex-col">
       {#each cv_links as link}
         <div
-          class="glass text-center divide-y divide-zinc-500/40 dark:divide-white/20"
+          class="glass divide-y divide-zinc-500/40 text-center dark:divide-white/20"
         >
           <div class="p-2">{link.lang}</div>
           <div
-            class="divide-x divide-zinc-500/40 dark:divide-white/20 grid grid-cols-2"
+            class="grid grid-cols-2 divide-x divide-zinc-500/40 dark:divide-white/20"
           >
             <a
               href={link.url}

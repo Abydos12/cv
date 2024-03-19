@@ -1,22 +1,22 @@
 <div
-  class="h-full flex flex-col gap-4 lg:gap-8 lg:w-5/6 2xl:w-4/6 m-auto lg:text-lg"
+  class="m-auto flex h-full flex-col gap-4 lg:w-5/6 lg:gap-8 lg:text-lg 2xl:w-4/6"
 >
   <div class="glass">
     <div
-      class="backdrop-brightness-100 dark:backdrop-brightness-150 p-4 lg:p-8 flex justify-between items-center"
+      class="flex items-center justify-between p-4 backdrop-brightness-100 dark:backdrop-brightness-150 lg:p-8"
     >
-      <div class="text-xl lg:text-3xl font-bold" id="resume-app">
+      <div class="text-xl font-bold lg:text-3xl" id="resume-app">
         RESUME WEBSITE
       </div>
     </div>
-    <div class=" p-4 lg:p-8 font-mono">
+    <div class=" p-4 font-mono lg:p-8">
       <p>
         I built this website in order to showcase my skills in design /
         development / deployment and extend my knowledge of software
         engineering.
       </p>
       <br />
-      <span class="text-xl lg:text-2xl mb-2 font-bold">Svelte</span>
+      <span class="mb-2 text-xl font-bold lg:text-2xl">Svelte</span>
       <p>
         This website is built using the framework Svelte. It was for me the
         opportunity to try and learn that framework. I was interested in how
@@ -24,7 +24,7 @@
         able to compare it with the others that I already tried.
       </p>
       <br />
-      <span class="text-xl lg:text-2xl mb-2 font-bold">Tailwindcss</span>
+      <span class="mb-2 text-xl font-bold lg:text-2xl">Tailwindcss</span>
       <p>
         For the styling part, I didn't need a library full of components and
         didn't wanted to write only css. This is why I tried Tailwindcss, which
@@ -33,7 +33,7 @@
         tried to make this effects on this website.
       </p>
       <br />
-      <span class="text-xl lg:text-2xl mb-2 font-bold">Deployment</span>
+      <span class="mb-2 text-xl font-bold lg:text-2xl">Deployment</span>
       <p>
         This website is proudly deployed on my personal server (aka, a potato
         computer 🥔 running on Ubuntu, please don't break it)
@@ -49,13 +49,13 @@
   </div>
   <div class="glass">
     <div
-      class="backdrop-brightness-100 dark:backdrop-brightness-150 p-4 lg:p-8 flex justify-between items-center"
+      class="flex items-center justify-between p-4 backdrop-brightness-100 dark:backdrop-brightness-150 lg:p-8"
     >
-      <div class="text-xl lg:text-3xl font-bold" id="personal-server">
+      <div class="text-xl font-bold lg:text-3xl" id="personal-server">
         PERSONAL SERVER
       </div>
     </div>
-    <div class=" p-4 lg:p-8 font-mono">
+    <div class=" p-4 font-mono lg:p-8">
       <p>
         In 2019, when I was in engineering school, I started to use an computer
         (potato computer but still) as a server. My first ideas about this, was
@@ -63,14 +63,14 @@
         then, I had time to practice a lot on it.
       </p>
       <br />
-      <h3 class="text-xl lg:text-2xl mb-2 font-bold">At school</h3>
+      <h3 class="mb-2 text-xl font-bold lg:text-2xl">At school</h3>
       <p>
         I used to do a lot of projects for school and most of them were group
         projects. For instance, we needed databases, website hosting,
         application deployment, network administration among other things.
       </p>
       <br />
-      <h3 class="text-xl lg:text-2xl mb-2 font-bold">Networks</h3>
+      <h3 class="mb-2 text-xl font-bold lg:text-2xl">Networks</h3>
       <p>
         The main issue at first was remote access. At the time, I had no control
         of my home router, so no way to open ports. This is how I started to get
@@ -81,7 +81,7 @@
         useful for group projects and remotely managing y server.
       </p>
       <br />
-      <span class="text-xl lg:text-2xl mb-2 font-bold"
+      <span class="mb-2 text-xl font-bold lg:text-2xl"
         >Monitoring and administration</span
       >
       <p>
@@ -96,13 +96,13 @@
   </div>
   <div class="glass">
     <div
-      class="backdrop-brightness-100 dark:backdrop-brightness-150 p-4 lg:p-8 flex justify-between items-center"
+      class="flex items-center justify-between p-4 backdrop-brightness-100 dark:backdrop-brightness-150 lg:p-8"
     >
-      <div class="text-xl lg:text-3xl font-bold" id="minepy-metrics">
+      <div class="text-xl font-bold lg:text-3xl" id="minepy-metrics">
         PROMETHEUS EXPORTER
       </div>
     </div>
-    <div class=" p-4 lg:p-8 font-mono">
+    <div class=" p-4 font-mono lg:p-8">
       <p>
         I created a prometheus exporter
         <a

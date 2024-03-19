@@ -45,28 +45,28 @@
   ];
 </script>
 
-<div class="h-full flex flex-col gap-4 lg:gap-8 lg:w-5/6 2xl:w-4/6 m-auto">
+<div class="m-auto flex h-full flex-col gap-4 lg:w-5/6 lg:gap-8 2xl:w-4/6">
   {#each experiences as e}
     <div class="glass font-mono">
       <div
-        class="backdrop-brightness-100 dark:backdrop-brightness-150 p-4 lg:p-8 flex justify-between items-center"
+        class="flex items-center justify-between p-4 backdrop-brightness-100 dark:backdrop-brightness-150 lg:p-8"
       >
         <div>
-          <div class="text-xl lg:text-3xl font-bold">
+          <div class="text-xl font-bold lg:text-3xl">
             {e.title}
           </div>
-          <div class="lg:text-2xl font-semibold italic">{e.company}</div>
-          <div class="lg:text-2xl font-semibold italic">{e.location}</div>
+          <div class="font-semibold italic lg:text-2xl">{e.company}</div>
+          <div class="font-semibold italic lg:text-2xl">{e.location}</div>
         </div>
         <div
-          class="text-sm lg:text-lg text-zinc-700 dark:text-zinc-400 font-semibold"
+          class="text-sm font-semibold text-zinc-700 dark:text-zinc-400 lg:text-lg"
         >
           <div>{e.dates.start}</div>
           <div>{e.dates.end}</div>
         </div>
       </div>
       <div class=" p-4 lg:p-8">
-        <ul class="list-square list-inside lg:text-lg">
+        <ul class="list-inside list-square lg:text-lg">
           {#each e.missions as m}
             <li>{m}</li>
           {/each}
