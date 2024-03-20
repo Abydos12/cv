@@ -1,9 +1,9 @@
 FROM node:alpine as builder
 
-ADD . /app
+COPY . /app
 WORKDIR /app
 
-RUN npm install
+RUN npm ci --no-fund --no-audit --no-progress
 RUN npm run build
 
 FROM nginx:alpine-slim
