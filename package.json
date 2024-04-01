@@ -18,7 +18,7 @@
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
     "autoprefixer": "^10.4.19",
     "carbon-icons-svelte": "^12.6.0",
-    "cssnano": "^6.1.1",
+    "cssnano": "^6.1.2",
     "postcss": "^8.4.35",
     "prettier": "^3.2.5",
     "prettier-plugin-svelte": "^3.2.2",
