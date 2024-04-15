@@ -21,7 +21,7 @@
     "cssnano": "^6.1.2",
     "postcss": "^8.4.35",
     "prettier": "^3.2.5",
-    "prettier-plugin-svelte": "^3.2.2",
+    "prettier-plugin-svelte": "^3.2.3",
     "prettier-plugin-tailwindcss": "^0.5.13",
     "svelte": "^4.2.14",
     "svelte-check": "^3.6.9",
