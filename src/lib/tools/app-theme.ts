@@ -15,7 +15,7 @@ const STORAGE_KEY = "theme";
 export const themes: ThemeCategory[] = [
   { name: "light", label: "Light", symbol: "🌕", icon: Light },
   { name: "dark", label: "Dark", symbol: "🌑", icon: Moon },
-  { name: "system", label: "System", symbol: " 🌓", icon: Screen }
+  { name: "system", label: "System", symbol: " 🌓", icon: Screen },
 ];
 
 export const theme = writable<Theme>(getDefaultMode());
